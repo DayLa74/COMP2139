@@ -1,0 +1,24 @@
+import random
+
+elements = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon"]
+print(elements)
+
+randomElement = random.choice(elements)
+
+attempts = 3
+for attempt in range(attempts):
+    guess = input(f"Attempts {attempt + 1}/{attempt}: Guess the element {randomElement}: ").strip()
+    if guess.lower() == randomElement.lower():
+        print(f"Correct! the element was {randomElement}.")
+    else:
+        if attempt < attempt -1:
+            print(f"Wrong guess! Hint: The element starts with'{randomElement[0]}', Try another time.")
+
+
+weaponOptions = ["Fist", "Knife", "Club", "Gun", "Bomb", "Nuclear bomb"]
+diceOptions = [1, 2, 3, 4, 5, 6]
+
+weaponRoll = random.choice(diceOptions)
+if weaponRoll <= 2: print("You rolled a weak weapon, friend.")
+elif weaponRoll <= 4: print("Your weapon is meh.")
+else: print("Nice weapon, friend!")
