@@ -14,11 +14,26 @@ for attempt in range(attempts):
         if attempt < attempt -1:
             print(f"Wrong guess! Hint: The element starts with'{randomElement[0]}', Try another time.")
 
+def main():
+    try:
+        combat_strength = int(input("Enter your combat strength: "))
+        weapon_options = ["Fist", "Knife", "Club", "Gun", "Bomb", "Nuclear bomb"]
+        dice_options = [1, 2, 3, 4, 5, 6]
 
-weaponOptions = ["Fist", "Knife", "Club", "Gun", "Bomb", "Nuclear bomb"]
-diceOptions = [1, 2, 3, 4, 5, 6]
+        weapon_roll = random.choice(dice_options)
+        chosen_weapon = weapon_options[weapon_roll - 1]
 
-weaponRoll = random.choice(diceOptions)
-if weaponRoll <= 2: print("You rolled a weak weapon, friend.")
-elif weaponRoll <= 4: print("Your weapon is meh.")
-else: print("Nice weapon, friend!")
+        total_combat_strength = combat_strength + weapon_roll
+
+        print(f"You rolled a {weapon_roll}. Your weapon is: {chosen_weapon}.")
+        print(f"Your total combat strength is now: {total_combat_strength}.")
+
+        if weapon_roll <= 2: print("You rolled a weak weapon, friend.")
+        elif weapon_roll <= 4: print("Your weapon is meh.")
+        else: print("Nice weapon, friend!")
+        if chosen_weapon != "Fist" : print("Thank goodness you didn't roll the Fist.")
+
+    except ValueError: print("Invalid input! Please enter an integer for combat strength.")
+    except Exception as e: print(f"An unexpected error occurred: {e}")
+if __name__ == "__main__":
+    main()
