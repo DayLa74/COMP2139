@@ -1,0 +1,8 @@
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.AssemblyInfoInputs.cache
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.AssemblyInfo.cs
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.csproj.CoreCompileInputs.cache
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.RazorAssemblyInfo.cache
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.RazorAssemblyInfo.cs
+C:\Users\DayLa\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\COMP2139-ICE.csproj.AssemblyReference.cache

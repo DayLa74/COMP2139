@@ -1,0 +1,36 @@
+﻿@*  *@
+@model List<Project>
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h2>Project Listing</h2>
+
+@if (Model.Any())
+{ //iteration
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ProjectID</th>
+            <th>name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        @foreach (var project in Model)
+        {
+        <tr>
+            <th>@Project.ProjectId</th>
+            <th>@Project.Name</th>
+            <th>@Project.Description</th>
+            <th></th>
+        </tr>
+        }
+        
+        </tbody>
+    </table>
+}else {
+    <p>No projects available</p>
+}

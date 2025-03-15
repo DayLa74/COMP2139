@@ -1,0 +1,26 @@
+﻿@model Project
+
+@{
+    ViewBag["Title"] = "Projects Details";
+    
+}
+
+<h2>Projects Details</h2>
+
+<div class="card">
+    
+    <div class="card-title">@Model.Name</div>
+    <div class="card-text">@Model.Description</div>
+
+    <dl class="row">
+
+        <dt class="col-sm-3"> Project ID</dt>
+        <dd class="col-sm-9"> @Model.ProjectId</dd>
+    </dl>
+
+
+
+    <a asp-controller="Projects" asp-action="Edit" asp-route-id="@Model.ProjectId" class="btn btn-primary"> Edit </a>
+    <a asp-controller="Projects" asp-action="Index" class="btn btn-secondary"> Back to Project List
+    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@Model.ProjectId" class="btn btn-primary">View Tasks</a>
+</div>
